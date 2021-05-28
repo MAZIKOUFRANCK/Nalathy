@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Texte-Couleur-Red {
+    color: #ff4d4d;
+}
+
+.Header-Page > .Bloc-Top-Dark-Header {
+    background-color: #232323;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Header-Page > .Nav-Bar-Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em 1.5em 1em;
+}
+
+.Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > h1 > a {
+    color: #232323;
+}
+
+.Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces {
+    display: flex;
+}
+
+.Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce {
+    margin-left: 1em;
+}
+
+.Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce > a {
+    color: #232323;
+}
+
+.Header-Page > .Banner-Image-Header {
+    background-image: url('../img/Banner/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+}
+
+.Header-Page > .Banner-Image-Header > .Bloc-Texte-Banner-Image-Header {
+    text-align: center;
+    color: #ffffff;
+}
+
+.Header-Page > .Banner-Image-Header > .Bloc-Texte-Banner-Image-Header > #Titre-Tres-Important {
+    font-size: 5em;
+}
+
+#articles {
+    background-color: #f9f9ff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+}
+
+#articles > .Texte-Article {
+    margin: 2em;
+
+}
+
+#articles > .Bloc-Articles {
+    display: flex;
+}
+
+#articles > .Bloc-Articles > .Article {
+    margin: 1em;
+    width: 25%;
+}
+
+#articles > .Bloc-Articles > .Article > .Article-Image > img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+#articles > .Bloc-Articles > .Article > .Article-Texte {
+    text-align: center;
+    padding: 1em;
+}
+
+#articles > .Bloc-Button {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#articles > .Bloc-Button > a > button {
+    padding: 1em 3em;
+    background-color: transparent;
+    border: 0.1em solid #ff4d4d;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+#articles > .Bloc-Button > a > button:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.Footer-Page {
+    background-color: #232323;
+}
+
+.Footer-Page > .Footer-Bloc-One {
+    background-color: #424242;
+    color: #ffffff;
+    padding: 3em;
+}
+
+.Footer-Page > .Footer-Bloc-One > div {
+    margin-bottom: 2em;
+}
+
+.Footer-Page > .Footer-Bloc-One > div > h1 {
+    margin-bottom: 1em;
+}
+
+.Footer-Page > .Footer-Bloc-One > div > p > a {
+    color: #ff4d4d;
+}
+
+.Footer-Page > .Footer-Bloc-Two {
+    background-color: #232323;
+    text-align: center;
+    color: #ffffff;
+    padding: 1em;
+}
+
+/* -- Media queries des desktop (Reduction du navigateur) -- */
+@media all and (max-width: 1024px){
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar {
+        margin-bottom: 2em;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > h1 {
+        display: none;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces {
+        display: block;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce-Padding {
+        padding: 1em 0em;
+    }
+
+    .Header-Page > .Nav-Bar-Header {
+        display: block;
+        text-align: center;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces-Bloc {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #articles > .Bloc-Articles {
+        display: block;
+    }
+
+    #articles > .Bloc-Articles > .Article {
+        margin-bottom: 2em;
+        width: 100%;
+    }
+}
+
+/* -- Media queries des devices (Smartphones) -- */
+@media all and (max-device-width: 1024px){
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar {
+        margin-bottom: 2em;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > h1 {
+        display: none;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces {
+        display: block;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce-Padding {
+        padding: 1em 0em;
+    }
+
+    .Header-Page > .Nav-Bar-Header {
+        display: block;
+        text-align: center;
+    }
+
+    .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces-Bloc {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #articles > .Bloc-Articles {
+        display: block;
+    }
+
+    #articles > .Bloc-Articles > .Article {
+        margin-bottom: 2em;
+        width: 100%;
+    }
+}
