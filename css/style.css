@@ -37,11 +37,44 @@ html {
 
 .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce {
     margin-left: 1em;
+    cursor: pointer;
 }
 
 .Header-Page > .Nav-Bar-Header > .Bloc-Nav-Bar > .Bloc-Liste-Puces > .Liste-Puce > a {
     color: #232323;
 }
+
+/* -- Pour les listes à puces du  bloc Bloc-Categorie-article -- */
+.Liste-Puce > .Bloc-Categorie-article  {
+    display: none;
+}
+
+.Liste-Puce > .Bloc-Categorie-article > .Liste-Puce-Categorie-Article  {
+    display: block;
+    text-align: center;
+}
+
+.Liste-Puce > .Bloc-Categorie-article > .Liste-Puce-Categorie-Article > a {
+    color: #232323;
+    display: block;
+    padding: 1em 6em 1em 6em;
+    line-height: 1em;
+}
+
+.Liste-Puce > .Bloc-Categorie-article > .Liste-Puce-Categorie-Article > a:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#Categories-Articles:hover .Bloc-Categorie-article {
+    display: block;
+    box-shadow: 0em 0em 1em gray;
+    position: absolute;
+    top: 5.5em;
+    background-color: #ffffff;
+}
+/* -- -- */
 
 .Header-Page > .Banner-Image-Header {
     background-image: url('../img/Banner/banner1.jpg');
@@ -75,12 +108,16 @@ html {
 }
 
 #articles > .Bloc-Articles {
-    display: flex;
+    width: 100%;
+    margin: 2em 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20%);
+    justify-content: center;
+    grid-gap: 2em;
 }
 
 #articles > .Bloc-Articles > .Article {
-    margin: 1em;
-    width: 25%;
+    width: 100%;
 }
 
 #articles > .Bloc-Articles > .Article > .Article-Image > img {
@@ -94,12 +131,13 @@ html {
     padding: 1em;
 }
 
-#articles > .Bloc-Button {
+.Bloc-Button {
     text-align: center;
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-#articles > .Bloc-Button > a > button {
+.Bloc-Button > a > button {
     padding: 1em 3em;
     background-color: transparent;
     border: 0.1em solid #ff4d4d;
@@ -107,7 +145,7 @@ html {
     border-radius: 0.5em;
 }
 
-#articles > .Bloc-Button > a > button:hover {
+.Bloc-Button > a > button:hover {
     background-color: #ff4d4d;
     color: #ffffff;
     transition: 0.5s;
@@ -178,6 +216,11 @@ html {
         margin-bottom: 2em;
         width: 100%;
     }
+
+    #Categories-Articles:hover .Bloc-Categorie-article {
+        left: 1em;
+        right: 1em;
+    }
 }
 
 /* -- Media queries des devices (Smartphones) -- */
@@ -215,5 +258,10 @@ html {
     #articles > .Bloc-Articles > .Article {
         margin-bottom: 2em;
         width: 100%;
+    }
+
+    #Categories-Articles:hover .Bloc-Categorie-article {
+        left: 1em;
+        right: 1em;
     }
 }

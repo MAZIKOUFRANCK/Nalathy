@@ -2,12 +2,32 @@
 /////////////////////////////////////////////////
 
 Paramètres du compte Email : 
-                            Email : nalathyshop@gmail.com
-                            Mot de passe : Nalathy1234
+                                Email : nalathyshop@gmail.com
+                                Mot de passe : Nalathy1234
 
 Paramètres du site Web : 
-                            Site: https://franckmazikou.github.io/Nalathy/
+                                Site: https://franckmazikou.github.io/Nalathy/
 
 Paramètres de la page Facebook :
-                            Page : Nalathy
+                                Page : Nalathy
+                                
+Version 1.0 : 
+                                Responsable : Franck Souverain MAZIKOU
+                                Résumé : 
+                                    Création du site web (Présentation des articles de ventes)
+                                    Nalathy avec deux pages principaux tels que : 
+                                    index.html et articles.html
+                                Date :  Vendredi 28 mai 2021
+
+Version 1.1 : 
+                                Responsable : Franck Souverain MAZIKOU
+                                Résumé :
+                                    Ajout de deux pages html (draps.html et chemises.html)
+                                    mise en place du menu deroulant à article, avec trois choix
+                                    chemises, draps et voir tout. 
+                                    Puis mise en place du système de grille dans la section 
+                                    des articles. et mise en place du bouton Plus d'articles
+                                    hors la section des articles
+                                Date : Vendredi 30 mai 2021
+
 ////////////////////////////////////////////////
